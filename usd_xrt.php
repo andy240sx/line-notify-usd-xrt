@@ -15,7 +15,7 @@ foreach(preg_split("/((\r?\n)|(\r\n?))/", $csv) as $line) {
     // Send a push to LINE Notify
     $url = 'https://notify-api.line.me/api/notify';
     $data = array(
-      'message' => "\n\n\u{1000B4} 銀行買入美金 = {$values[3]}\n\u{1000B4} 銀行賣出美金 = {$values[13]}\n\nhttps://rate.bot.com.tw/xrt?Lang=zh-TW"
+      'message' => "\n\n\u{1000B4} 台銀買入美金 = {$values[3]}\n\u{1000B4} 台銀賣出美金 = {$values[13]}\n\nhttps://rate.bot.com.tw/xrt?Lang=zh-TW"
     );
 
     $options = array(
